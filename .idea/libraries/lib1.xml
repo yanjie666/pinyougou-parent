@@ -1,0 +1,38 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/zkclient-0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/jline-0.9.94.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aspects-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/javassist-3.11.0.GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-messaging-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jms-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/netty-3.7.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/fastjson-1.2.28.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/junit-4.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/dubbo-2.8.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/zookeeper-3.4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-test-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-support-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pinyougou-shop-web/target/pinyougou-shop-web-0.0.1-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
