@@ -4,6 +4,8 @@ import com.pinyougou.pojo.TbSpecification;
 
 import com.pinyougou.pojogroup.Specification;
 import entity.PageResult;
+import entity.RelevanceSpecification;
+
 /**
  * 服务层接口
  * @author Administrator
@@ -58,5 +60,8 @@ public interface SpecificationService {
 	 * @return
 	 */
 	public PageResult findPage(TbSpecification specification, int pageNum, int pageSize);
-	
+
+
+
+	public RelevanceSpecification selectRelevanceSpecification();
 }
