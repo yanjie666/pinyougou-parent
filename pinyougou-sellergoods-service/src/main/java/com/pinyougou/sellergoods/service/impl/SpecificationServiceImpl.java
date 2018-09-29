@@ -1,10 +1,12 @@
 package com.pinyougou.sellergoods.service.impl;
 import java.util.List;
+import java.util.Map;
 
 import com.pinyougou.mapper.TbSpecificationOptionMapper;
 import com.pinyougou.pojo.TbSpecificationOption;
 import com.pinyougou.pojo.TbSpecificationOptionExample;
 import com.pinyougou.pojogroup.Specification;
+import entity.RelevanceSpecification;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.Page;
@@ -148,5 +150,13 @@ public class SpecificationServiceImpl implements SpecificationService {
 		Page<TbSpecification> page= (Page<TbSpecification>)specificationMapper.selectByExample(example);		
 		return new PageResult(page.getTotal(), page.getResult());
 	}
-	
+
+
+	public RelevanceSpecification selectRelevanceSpecification(){
+		List<Map> list = specificationMapper.selectOptionList();
+		RelevanceSpecification relevanceSpecification = new RelevanceSpecification();
+		relevanceSpecification.setData(list);
+
+		return relevanceSpecification;
+	}
 }

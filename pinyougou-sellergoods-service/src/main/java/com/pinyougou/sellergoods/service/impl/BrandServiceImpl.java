@@ -1,11 +1,13 @@
 package com.pinyougou.sellergoods.service.impl;
 
 import java.util.List;
+import java.util.Map;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.pinyougou.pojo.TbBrandExample;
 import entity.PageResult;
+import entity.RelevanceBrand;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alibaba.dubbo.config.annotation.Service;
@@ -69,6 +71,15 @@ public class BrandServiceImpl implements BrandService {
         }
         Page<TbBrand> page= (Page<TbBrand>)brandMapper.selectByExample(example);
         return new PageResult(page.getTotal(), page.getResult());
+    }
+
+    @Override
+    public RelevanceBrand selectRelevanceBrand() {
+
+        List<Map> list = brandMapper.selectOptionList();
+        RelevanceBrand relevanceBrand = new RelevanceBrand();
+        relevanceBrand.setData(list);
+        return relevanceBrand;
     }
 
 
