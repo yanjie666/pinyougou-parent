@@ -26,5 +26,9 @@ app.service('brandService',function($http){
             this.search=function (page,rows,entity) {
                 return $http.post('../brand/search.do?page='+page+"&rows="+rows, entity);
             }
+            this.selectRelevanceBrand=function(){
+            		return $http.get('../brand/selectRelevanceBrand.do');
+            	}
+
 
         });

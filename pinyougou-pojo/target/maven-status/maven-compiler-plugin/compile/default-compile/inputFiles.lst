@@ -8,12 +8,14 @@ E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbProvi
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbOrderExample.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbAreas.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSpecificationExample.java
+E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojogroup\Specification.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbBrand.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbFreightTemplateExample.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbOrderItemExample.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbOrderItem.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbGoodsDescExample.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbAddressExample.java
+E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\entity\Result.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItem.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbContentCategoryExample.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbPayLog.java
@@ -23,6 +25,7 @@ E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbAreas
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbAddress.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbContent.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbContentExample.java
+E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\entity\PageResult.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbCities.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItemExample.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbTypeTemplate.java
@@ -35,6 +38,8 @@ E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSpeci
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbGoods.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSeller.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbTypeTemplateExample.java
+E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\entity\RelevanceBrand.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbUser.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbContentCategory.java
+E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\entity\RelevanceSpecification.java
 E:\code\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItemCatExample.java
