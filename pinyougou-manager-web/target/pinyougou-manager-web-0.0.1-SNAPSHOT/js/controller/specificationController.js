@@ -79,11 +79,11 @@ app.controller('specificationController' ,function($scope,$controller   ,specifi
 
 
     $scope.addTableRow=function(){
-		$scope.entity.specificastionOptionList.push({});
+		$scope.entity.specificationOptionList.push({});
 	}
 
 
 	$scope.deleTableRow=function (index) {
-		$scope.entity.specificastionOptionList.splice(index,1);
+		$scope.entity.specificationOptionList.splice(index,1);
     }
 });	

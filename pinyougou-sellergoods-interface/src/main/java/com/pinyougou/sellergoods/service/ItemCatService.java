@@ -57,5 +57,17 @@ public interface ItemCatService {
 	 * @return
 	 */
 	public PageResult findPage(TbItemCat itemCat, int pageNum, int pageSize);
-	
+
+
+	/**
+	 * 根据上级ID返回列表
+	 * @return
+	 */
+	/**
+	 * 根据上级ID返回列表,不实现分页功能
+	 * @return
+	 */
+	public List<TbItemCat> findByParentId(Long parentId);
+
+
 }
