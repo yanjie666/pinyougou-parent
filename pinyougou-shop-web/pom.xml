@@ -73,7 +73,7 @@
 	</dependency>
 	<dependency>
 		<groupId>javax.servlet</groupId>
-		<artifactId>servlet-api</artifactId>		
+		<artifactId>servlet-api</artifactId>
 		<scope>provided</scope>
 	</dependency>
       <dependency>
@@ -94,6 +94,11 @@
 	  <dependency>
 		  <groupId>org.springframework.security</groupId>
 		  <artifactId>spring-security-config</artifactId>
+	  </dependency>
+	  <dependency>
+		  <groupId>com.pinyougou</groupId>
+		  <artifactId>pinyougou-common</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
 	  </dependency>
   </dependencies>
   

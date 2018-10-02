@@ -19,6 +19,7 @@
 
 	<script type="text/javascript" src="../plugins/angularjs/angular.min.js">  </script>
 	<script type="text/javascript" src="../js/base.js">  </script>
+	<script type="text/javascript" src="../js/service/uploadService.js">  </script>
 	<script type="text/javascript" src="../js/service/goodsService.js">  </script>
 	<script type="text/javascript" src="../js/controller/baseController.js">  </script>
 	<script type="text/javascript" src="../js/controller/goodsController.js">  </script>
@@ -145,7 +146,7 @@
                                 <div class="row data-type">                                  
 								 <!-- 颜色图片 -->
 								 <div class="btn-group">
-					                 <button type="button" class="btn btn-default" title="新建" data-target="#uploadModal"  data-toggle="modal"  ><i class="fa fa-file-o"></i> 新建</button>
+					                 <button type="button" class="btn btn-default" title="新建" data-target="#uploadModal"  data-toggle="modal"  ng-click="image_entity={}"><i class="fa fa-file-o"></i> 新建</button>
                              		                 
 					             </div>
 								 
@@ -158,16 +159,13 @@
 												<th class="sorting">操作</th>
 							            </thead>
 					                    <tbody>
-					                      <tr>					                           
-									            <td>
-									            	
-									            </td>
-									            <td>
-									           		<img alt="" src="" width="100px" height="100px">	            	 
-									            </td>
-												 <td> <button type="button" class="btn btn-default" title="删除" ><i class="fa fa-trash-o"></i> 删除</button></td> 
-					                      </tr>
-					                    </tbody>
+										<tr ng-repeat="pojo in entity.goodsDesc.itemImages">
+											<td>{{pojo.color}}</td>
+											<td><img alt="" src="{{pojo.url}}" width="100px" height="100px"></td>
+											<button type="button" class="btn btn-default" title="删除" ng-click="remove_image_entity($index)"><i class="fa fa-trash-o"></i> 删除</button>
+										</tr>
+
+										</tbody>
 								 </table> 
 								  
                                 </div>
@@ -370,36 +368,35 @@
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 			<h3 id="myModalLabel">上传商品图片</h3>
 		</div>
-		<div class="modal-body">							
-			
+		<div class="modal-body">
 			<table class="table table-bordered table-striped">
-		      	<tr>
-		      		<td>颜色</td>
-		      		<td><input  class="form-control" placeholder="颜色" >  </td>
-		      	</tr>			    
-		      	<tr>
-		      		<td>商品图片</td>
-		      		<td>
+				<tr>
+					<td>颜色</td>
+					<td><input  class="form-control" placeholder="颜色" ng-model="image_entity.color">  </td>
+				</tr>
+				<tr>
+					<td>商品图片</td>
+					<td>
 						<table>
 							<tr>
 								<td>
-								<input type="file" id="file" />				                
-					                <button class="btn btn-primary" type="button" >
-				                   		上传
-					                </button>	
-					            </td>
-								<td>
-									<img  src="" width="200px" height="200px">
+									<input type="file" id="file" />
+									<button class="btn btn-primary" type="button" ng-click="uploadFile()">
+										上传
+									</button>
 								</td>
-							</tr>						
+								<td>
+									<img  src="{{image_entity.url}}" width="200px" height="200px">
+								</td>
+							</tr>
 						</table>
-		      		</td>
-		      	</tr>		      	
-			 </table>				
-			
+					</td>
+				</tr>
+			</table>
 		</div>
-		<div class="modal-footer">						
-			<button class="btn btn-success"  data-dismiss="modal" aria-hidden="true">保存</button>
+
+		<div class="modal-footer">
+			<button class="btn btn-success" ng-click="add_image_entity()" data-dismiss="modal" aria-hidden="true">保存</button>
 			<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
 		</div>
 	  </div>

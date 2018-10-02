@@ -79,3 +79,5 @@
 0:0:0:0:0:0:0:1 - - [01/Oct/2018:16:42:56 +0800] "GET /js/pages/shoplogin.js HTTP/1.1" 404 993 http-bio-9102-exec-10 2
 0:0:0:0:0:0:0:1 - - [01/Oct/2018:16:42:56 +0800] "GET /assets/img/favicon.ico HTTP/1.1" 302 - http-bio-9102-exec-10 61
 0:0:0:0:0:0:0:1 - - [01/Oct/2018:16:42:56 +0800] "GET /shoplogin.html HTTP/1.1" 200 3692 http-bio-9102-exec-10 2
+0:0:0:0:0:0:0:1 - - [01/Oct/2018:23:55:04 +0800] "GET /shoplogin.html HTTP/1.1" 404 - http-bio-9102-exec-1 0
+0:0:0:0:0:0:0:1 - - [01/Oct/2018:23:55:13 +0800] "GET /shoplogin.html HTTP/1.1" 404 - http-bio-9102-exec-4 0
