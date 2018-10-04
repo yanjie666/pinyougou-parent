@@ -242,6 +242,23 @@ app.controller('goodsController' ,function($scope,$controller   ,goodsService,up
         return newList;
     }
 
+    $scope.status=['未审核','已审核','审核未通过','关闭'];//商品状态
+
+
+
+    $scope.itemCatList=[];//商品分类列表
+
+
+    //加载所有的商品分类列表
+    $scope.findItemCatList=function(){
+        itemCatService.findAll().success(
+            function(response){
+                for(var i=0;i<response.length;i++){
+                    $scope.itemCatList[response[i].id]=response[i].name;
+                }
+            }
+        );
+    }
 
 
 });	

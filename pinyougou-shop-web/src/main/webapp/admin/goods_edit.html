@@ -206,7 +206,7 @@
 
 								</div>
 							</div>
-							{{entity.itemList}}
+
 
 						</div>
 
@@ -226,7 +226,7 @@
 								<tbody>
 								<tr ng-repeat="pojo in entity.itemList">
 									<td ng-repeat="item in entity.goodsDesc.specificationItems">
-										
+										{{pojo.spec[item.attributeName]}}
 									</td>
 
 									<td>
