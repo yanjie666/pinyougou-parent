@@ -216,4 +216,32 @@ app.controller('goodsController' ,function($scope,$controller   ,goodsService,up
     }
 
 
+        //创建SKU列表
+    $scope.createItemList=function(){
+        $scope.entity.itemList=[{spec:{},price:0,num:99999,status:'0',isDefault:'0' } ];//初始    多少行
+        var items=  $scope.entity.goodsDesc.specificationItems;	   //定义的多少列SPU属性
+            //只有选择的列的长度固定,循环,遍历列的长度
+        for(var i=0;i< items.length;i++){
+            //计算增加一列(有不同取值),增加了多少行
+            $scope.entity.itemList = addColumn( $scope.entity.itemList,items[i].attributeName,items[i].attributeValue );
+        }
+    }
+        //添加列值
+    addColumn=function(list,columnName,conlumnValues){
+        var newList=[];//新的集合
+            //遍历旧集合,因为每次要在旧集合基础上修改
+        for(var i=0;i<list.length;i++){
+            var oldRow= list[i];
+        //循环,每次都要在oldRow的基础上修改,所以必须记录oldRow的值,进行深拷贝2
+            for(var j=0;j<conlumnValues.length;j++){
+                var newRow= JSON.parse( JSON.stringify( oldRow )  );//深克隆
+                newRow.spec[columnName]=conlumnValues[j];
+                newList.push(newRow);
+            }
+        }
+        return newList;
+    }
+
+
+
 });	
