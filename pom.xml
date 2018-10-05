@@ -5,7 +5,8 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   
-<!-- 集中定义依赖版本号 -->
+  
+  	<!-- 集中定义依赖版本号 -->
 	<properties>
 		<junit.version>4.12</junit.version>
 		<spring.version>4.2.4.RELEASE</spring.version>
@@ -247,16 +248,13 @@
 	            <groupId>xml-apis</groupId>  
 	            <artifactId>xml-apis</artifactId>  
 	            <version>1.4.01</version>  
-	        </dependency>
-
-
-
-		</dependencies>
-
+	        </dependency> 		
+		</dependencies>	
+	
 	</dependencyManagement>
+	
 
-
-
+	
 	<build>
 		
 		<plugins>			
@@ -284,5 +282,10 @@
 		<module>pinyougou-sellergoods-service</module>
 		<module>pinyougou-manager-web</module>
 		<module>pinyougou-shop-web</module>
+		<module>pinyougou-content-interface</module>
+		
+		<module>pinyougou-portal-web</module>
+
+		<module>pinyougou-content-service</module>
 	</modules>
 </project>

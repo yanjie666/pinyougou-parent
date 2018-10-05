@@ -83,10 +83,22 @@
 		<artifactId>pinyougou-sellergoods-interface</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</dependency>
-    </dependencies>
-  
-  
-    <build>  
+
+
+		<!-- 身份验证 -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+		</dependency>
+
+	</dependencies>
+
+
+    <build>
 	  <plugins>
 	      <plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
@@ -94,7 +106,7 @@
 				<version>2.2</version>
 				<configuration>
 					<!-- 指定端口 -->
-					<port>9101</port>
+					<port>9111</port>
 					<!-- 请求路径 -->
 					<path>/</path>
 				</configuration>
