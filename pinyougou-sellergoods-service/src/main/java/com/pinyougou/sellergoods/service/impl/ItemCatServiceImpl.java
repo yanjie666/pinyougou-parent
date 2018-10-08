@@ -110,13 +110,14 @@ public class ItemCatServiceImpl implements ItemCatService {
 		criteria.andParentIdEqualTo(parentId);
 		// 条件查询
 		
-		//将模板ID放入缓存（以商品分类名称作为key）
-
+		//将模板ID放入缓存（以商品分类名称作为key）	
+		
 		List<TbItemCat> itemCatList = findAll();
 		for(TbItemCat itemCat:itemCatList){
 			redisTemplate.boundHashOps("itemCat").put(itemCat.getName(), itemCat.getTypeId());
 		}
 		System.out.println("将模板ID放入缓存");
+		
 		return itemCatMapper.selectByExample(example);
 	}
 	
