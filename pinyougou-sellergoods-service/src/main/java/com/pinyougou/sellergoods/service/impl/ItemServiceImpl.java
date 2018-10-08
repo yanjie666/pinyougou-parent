@@ -11,7 +11,6 @@ import com.pinyougou.pojo.TbItemExample.Criteria;
 import com.pinyougou.sellergoods.service.ItemService;
 
 import entity.PageResult;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 服务实现层
@@ -19,7 +18,6 @@ import org.springframework.transaction.annotation.Transactional;
  *
  */
 @Service
-@Transactional
 public class ItemServiceImpl implements ItemService {
 
 	@Autowired
@@ -122,9 +120,9 @@ public class ItemServiceImpl implements ItemService {
 			if(item.getBrand()!=null && item.getBrand().length()>0){
 				criteria.andBrandLike("%"+item.getBrand()+"%");
 			}
-			if(item.getSpec()!=null && item.getSpec().length()>0){
-				criteria.andSpecLike("%"+item.getSpec()+"%");
-			}
+			//if(item.getSpec()!=null && item.getSpec().length()>0){
+			//	criteria.andSpecLike("%"+item.getSpec()+"%");
+			//}
 			if(item.getSeller()!=null && item.getSeller().length()>0){
 				criteria.andSellerLike("%"+item.getSeller()+"%");
 			}
