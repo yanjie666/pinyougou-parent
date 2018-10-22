@@ -1,5 +1,6 @@
 package com.pinyougou.solrutil;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -46,11 +47,29 @@ public class SolrUtil {
 	
 	public static void main(String[] args) {
 		
-		ApplicationContext context=new ClassPathXmlApplicationContext("classpath*:spring/applicationContext*.xml");
+		/*ApplicationContext context=new ClassPathXmlApplicationContext("classpath*:spring/applicationContext*.xml");
 		SolrUtil solrUtil=  (SolrUtil) context.getBean("solrUtil");
-		solrUtil.importItemData();
-		
+		solrUtil.importItemData();*/
+		SolrUtil su = new SolrUtil();
+		su.getGrayCode(2);
 	}
-	
+	public List<Integer> getGrayCode(int bitNum){
+		List<Integer> list = new ArrayList<Integer>();
+		for(int i = 0; i < (int)Math.pow(2, bitNum); i++){
+			 int grayCode = (i >> 1) ^ i;
+
+			String str = Integer.valueOf(num2Binary(grayCode, bitNum),2).toString();
+			 list.add(Integer.parseInt(str));
+			 System.out.println(str);
+ 		}
+ 		return list;
+	}
+	public String num2Binary(int num, int bitNum){
+		String ret = "";
+		for(int i = bitNum-1; i >= 0; i--){
+			ret += (num >> i) & 1;
+		}
+ 		return ret;
+ 	}
 	
 }
