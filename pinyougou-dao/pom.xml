@@ -3,12 +3,11 @@
   <parent>
     <groupId>com.pinyougou</groupId>
     <artifactId>pinyougou-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
   </parent>
   <artifactId>pinyougou-dao</artifactId>
   
-  
- <dependencies>
+<dependencies>
 
   	<dependency>
 	    <groupId>com.github.pagehelper</groupId>
@@ -38,14 +37,10 @@
 		<artifactId>druid</artifactId>		
 	</dependency>
 
-
-
 	<dependency>
 		<groupId>com.pinyougou</groupId>
 		<artifactId>pinyougou-pojo</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.3-SNAPSHOT</version>
 	</dependency>
- </dependencies>
-
-  
+</dependencies>
 </project>

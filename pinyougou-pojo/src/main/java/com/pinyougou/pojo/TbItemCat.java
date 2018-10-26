@@ -2,7 +2,7 @@ package com.pinyougou.pojo;
 
 import java.io.Serializable;
 
-public class TbItemCat implements Serializable {
+public class TbItemCat implements Serializable{
     private Long id;
 
     private Long parentId;

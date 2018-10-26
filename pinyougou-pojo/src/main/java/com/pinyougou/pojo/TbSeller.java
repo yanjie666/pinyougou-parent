@@ -3,7 +3,7 @@ package com.pinyougou.pojo;
 import java.io.Serializable;
 import java.util.Date;
 
-public class TbSeller implements Serializable {
+public class TbSeller implements Serializable{
     private String sellerId;
 
     private String name;

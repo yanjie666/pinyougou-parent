@@ -1,14 +1,14 @@
 package com.pinyougou.manager.controller;
 import java.util.List;
+import java.util.Map;
 
-import com.pinyougou.pojogroup.Specification;
-import entity.RelevanceBrand;
-import entity.RelevanceSpecification;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.pinyougou.pojo.TbSpecification;
+import com.pinyougou.pojo.group.Specification;
 import com.pinyougou.sellergoods.service.SpecificationService;
 
 import entity.PageResult;
@@ -104,7 +104,7 @@ public class SpecificationController {
 	
 		/**
 	 * 查询+分页
-	 * @param specification
+	 * @param brand
 	 * @param page
 	 * @param rows
 	 * @return
@@ -113,12 +113,9 @@ public class SpecificationController {
 	public PageResult search(@RequestBody TbSpecification specification, int page, int rows  ){
 		return specificationService.findPage(specification, page, rows);		
 	}
-
-
-	@RequestMapping("/selectRelevanceSpecification")
-	public RelevanceSpecification selectRelevanceBrand(){
-		return specificationService.selectRelevanceSpecification();
+	
+	@RequestMapping("/selectOptionList")
+	public List<Map> selectOptionList(){
+		return specificationService.selectOptionList();
 	}
-
-
 }

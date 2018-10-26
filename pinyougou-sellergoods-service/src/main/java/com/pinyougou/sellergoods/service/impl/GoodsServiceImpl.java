@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.pinyougou.pojogroup.Goods;
 import org.apache.solr.common.util.Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,6 +28,7 @@ import com.pinyougou.pojo.TbItem;
 import com.pinyougou.pojo.TbItemCat;
 import com.pinyougou.pojo.TbItemExample;
 import com.pinyougou.pojo.TbSeller;
+import com.pinyougou.pojo.group.Goods;
 import com.pinyougou.sellergoods.service.GoodsService;
 
 import entity.PageResult;
@@ -170,7 +170,7 @@ public class GoodsServiceImpl implements GoodsService {
 		// 先删除，再保存:
 		// 删除SKU的信息:
 		TbItemExample example = new TbItemExample();
-		TbItemExample.Criteria criteria = example.createCriteria();
+		com.pinyougou.pojo.TbItemExample.Criteria criteria = example.createCriteria();
 		criteria.andGoodsIdEqualTo(goods.getGoods().getId());
 		itemMapper.deleteByExample(example);
 		// 保存SKU的信息
@@ -194,7 +194,7 @@ public class GoodsServiceImpl implements GoodsService {
 		
 		// 查询SKU表的信息:
 		TbItemExample example = new TbItemExample();
-		TbItemExample.Criteria criteria = example.createCriteria();
+		com.pinyougou.pojo.TbItemExample.Criteria criteria = example.createCriteria();
 		criteria.andGoodsIdEqualTo(id);
 		List<TbItem> list = itemMapper.selectByExample(example);
 		goods.setItemList(list);
@@ -278,7 +278,7 @@ public class GoodsServiceImpl implements GoodsService {
 	public List<TbItem>	findItemListByGoodsIdListAndStatus(Long []goodsIds,String status){
 		
 		TbItemExample example=new TbItemExample();
-		TbItemExample.Criteria criteria = example.createCriteria();
+		com.pinyougou.pojo.TbItemExample.Criteria criteria = example.createCriteria();
 		criteria.andStatusEqualTo(status);//状态
 		criteria.andGoodsIdIn( Arrays.asList(goodsIds));//指定条件：SPUID集合
 		

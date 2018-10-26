@@ -157,7 +157,7 @@ public class TypeTemplateServiceImpl implements TypeTemplateService {
 				// 根据规格的ID 查询规格选项的数据:
 				// 设置查询条件:
 				TbSpecificationOptionExample example = new TbSpecificationOptionExample();
-				TbSpecificationOptionExample.Criteria criteria = example.createCriteria();
+				com.pinyougou.pojo.TbSpecificationOptionExample.Criteria criteria = example.createCriteria();
 				criteria.andSpecIdEqualTo(new Long((Integer)map.get("id")));
 				
 				List<TbSpecificationOption> specOptionList = specificationOptionMapper.selectByExample(example);

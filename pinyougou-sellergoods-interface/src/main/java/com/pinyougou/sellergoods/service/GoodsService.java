@@ -3,9 +3,8 @@ import java.util.List;
 
 import com.pinyougou.pojo.TbGoods;
 import com.pinyougou.pojo.TbItem;
+import com.pinyougou.pojo.group.Goods;
 
-
-import com.pinyougou.pojogroup.Goods;
 import entity.PageResult;
 /**
  * 服务层接口
@@ -25,7 +24,7 @@ public interface GoodsService {
 	 * 返回分页列表
 	 * @return
 	 */
-	public PageResult findPage(int pageNum, int pageSize);
+	public PageResult findPage(int pageNum,int pageSize);
 	
 	
 	/**
@@ -52,7 +51,7 @@ public interface GoodsService {
 	 * 批量删除
 	 * @param ids
 	 */
-	public void delete(Long[] ids);
+	public void delete(Long [] ids);
 
 	/**
 	 * 分页
@@ -60,9 +59,9 @@ public interface GoodsService {
 	 * @param pageSize 每页记录数
 	 * @return
 	 */
-	public PageResult findPage(TbGoods goods, int pageNum, int pageSize);
+	public PageResult findPage(TbGoods goods, int pageNum,int pageSize);
 	
-	public void updateStatus(Long[] ids, String status);
+	public void updateStatus(Long[] ids,String status);
 	
 	
 	/**
@@ -71,5 +70,5 @@ public interface GoodsService {
 	 * @param status
 	 * @return
 	 */
-	public List<TbItem>	findItemListByGoodsIdListAndStatus(Long[] goodsIds, String status);
+	public List<TbItem>	findItemListByGoodsIdListAndStatus(Long []goodsIds,String status);
 }

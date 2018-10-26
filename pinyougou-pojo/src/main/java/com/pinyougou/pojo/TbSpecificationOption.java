@@ -2,7 +2,7 @@ package com.pinyougou.pojo;
 
 import java.io.Serializable;
 
-public class TbSpecificationOption implements Serializable {
+public class TbSpecificationOption implements Serializable{
     private Long id;
 
     private String optionName;

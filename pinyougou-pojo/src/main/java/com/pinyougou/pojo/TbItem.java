@@ -39,7 +39,6 @@ public class TbItem implements Serializable{
     @Field("item_updatetime")
     private Date updateTime;
 
-
     private String itemSn;
 
     private BigDecimal costPirce;
@@ -66,6 +65,7 @@ public class TbItem implements Serializable{
     @Field("item_seller")
     private String seller;
     
+   
     @Dynamic
     @Field("item_spec_*")
     private Map<String,String> specMap;
@@ -78,7 +78,7 @@ public class TbItem implements Serializable{
 		this.specMap = specMap;
 	}
 	
-	
+    
 
 	public Long getId() {
         return id;
@@ -247,6 +247,7 @@ public class TbItem implements Serializable{
     public void setBrand(String brand) {
         this.brand = brand == null ? null : brand.trim();
     }
+    
 
     public String getSpec() {
         return spec;

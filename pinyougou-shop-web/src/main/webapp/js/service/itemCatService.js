@@ -28,11 +28,9 @@ app.service('itemCatService',function($http){
 	//搜索
 	this.search=function(page,rows,searchEntity){
 		return $http.post('../itemCat/search.do?page='+page+"&rows="+rows, searchEntity);
+	}    	
+	
+	this.findByParentId = function(parentId){
+		return $http.get("../itemCat/findByParentId.do?parentId="+parentId);
 	}
-
-    //根据上级ID查询下级列表,不实现分页功能
-    this.findByParentId=function(parentId){
-        return $http.get('../itemCat/findByParentId.do?parentId='+parentId);
-    }
-
 });

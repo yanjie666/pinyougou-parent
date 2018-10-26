@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.pinyougou</groupId>
     <artifactId>pinyougou-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
   </parent>
   <artifactId>pinyougou-manager-web</artifactId>
   <packaging>war</packaging>
@@ -71,6 +71,17 @@
 	    <groupId>commons-codec</groupId>
 	    <artifactId>commons-codec</artifactId>
 	</dependency>
+	<!-- 身份认证的依赖 -->
+	<dependency>
+		<groupId>org.springframework.security</groupId>
+		<artifactId>spring-security-web</artifactId>
+	</dependency>
+
+	<dependency>
+		<groupId>org.springframework.security</groupId>
+		<artifactId>spring-security-config</artifactId>
+	</dependency>
+	
 	<dependency>
 		<groupId>javax.servlet</groupId>
 		<artifactId>servlet-api</artifactId>		
@@ -81,46 +92,29 @@
 	<dependency>
 		<groupId>com.pinyougou</groupId>
 		<artifactId>pinyougou-sellergoods-interface</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.3-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+		<groupId>com.pinyougou</groupId>
+		<artifactId>pinyougou-content-interface</artifactId>
+		<version>0.0.3-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+		<groupId>com.pinyougou</groupId>
+		<artifactId>pinyougou-common</artifactId>
+		<version>0.0.3-SNAPSHOT</version>
 	</dependency>
 
-
-		<!-- 身份验证 -->
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-config</artifactId>
-		</dependency>
-
-
-		<dependency>
-			<groupId>com.pinyougou</groupId>
-			<artifactId>pinyougou-content-interface</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.pinyougou</groupId>
-			<artifactId>pinyougou-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
-			<groupId>pinyougou-search-interface</groupId>
-			<artifactId>pinyougou-search-interface</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.pinyougou</groupId>
-			<artifactId>pinyougou-page-interface</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
-
-
-    <build>
+	
+	<dependency>
+		<groupId>org.apache.activemq</groupId>
+		<artifactId>activemq-client</artifactId>
+		<version>5.13.4</version>
+	</dependency>
+    </dependencies>
+  
+  
+    <build>  
 	  <plugins>
 	      <plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
@@ -128,13 +122,12 @@
 				<version>2.2</version>
 				<configuration>
 					<!-- 指定端口 -->
-					<port>9111</port>
+					<port>9101</port>
 					<!-- 请求路径 -->
 					<path>/</path>
 				</configuration>
 	  	  </plugin>
 	  </plugins>  
     </build>
-  
-  
+    
 </project>

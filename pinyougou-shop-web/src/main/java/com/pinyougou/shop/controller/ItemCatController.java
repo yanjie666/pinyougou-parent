@@ -1,16 +1,15 @@
 package com.pinyougou.shop.controller;
+import java.util.List;
 
-import com.alibaba.dubbo.config.annotation.Reference;
-import com.pinyougou.pojo.TbItemCat;
-import com.pinyougou.sellergoods.service.ItemCatService;
-import entity.PageResult;
-import entity.Result;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.pinyougou.pojo.TbItemCat;
+import com.pinyougou.sellergoods.service.ItemCatService;
 
-import java.util.List;
-
+import entity.PageResult;
+import entity.Result;
 /**
  * controller
  * @author Administrator
@@ -111,17 +110,9 @@ public class ItemCatController {
 	public PageResult search(@RequestBody TbItemCat itemCat, int page, int rows  ){
 		return itemCatService.findPage(itemCat, page, rows);		
 	}
-
-
-	/**
-	 * 根据上级ID查询列表,不实现分页功能
-	 * @param parentId
-	 * @return
-	 */
+	
 	@RequestMapping("/findByParentId")
 	public List<TbItemCat> findByParentId(Long parentId){
 		return itemCatService.findByParentId(parentId);
 	}
-
-
 }

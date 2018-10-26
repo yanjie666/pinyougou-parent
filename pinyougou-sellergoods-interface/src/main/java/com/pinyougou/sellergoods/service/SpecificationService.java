@@ -1,11 +1,11 @@
 package com.pinyougou.sellergoods.service;
 import java.util.List;
+import java.util.Map;
+
 import com.pinyougou.pojo.TbSpecification;
+import com.pinyougou.pojo.group.Specification;
 
-import com.pinyougou.pojogroup.Specification;
 import entity.PageResult;
-import entity.RelevanceSpecification;
-
 /**
  * 服务层接口
  * @author Administrator
@@ -24,7 +24,7 @@ public interface SpecificationService {
 	 * 返回分页列表
 	 * @return
 	 */
-	public PageResult findPage(int pageNum, int pageSize);
+	public PageResult findPage(int pageNum,int pageSize);
 	
 	
 	/**
@@ -59,9 +59,7 @@ public interface SpecificationService {
 	 * @param pageSize 每页记录数
 	 * @return
 	 */
-	public PageResult findPage(TbSpecification specification, int pageNum, int pageSize);
-
-
-
-	public RelevanceSpecification selectRelevanceSpecification();
+	public PageResult findPage(TbSpecification specification, int pageNum,int pageSize);
+	
+	public List<Map> selectOptionList();
 }

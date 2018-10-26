@@ -23,7 +23,7 @@ public interface TypeTemplateService {
 	 * 返回分页列表
 	 * @return
 	 */
-	public PageResult findPage(int pageNum, int pageSize);
+	public PageResult findPage(int pageNum,int pageSize);
 	
 	
 	/**
@@ -50,7 +50,7 @@ public interface TypeTemplateService {
 	 * 批量删除
 	 * @param ids
 	 */
-	public void delete(Long[] ids);
+	public void delete(Long [] ids);
 
 	/**
 	 * 分页
@@ -58,15 +58,8 @@ public interface TypeTemplateService {
 	 * @param pageSize 每页记录数
 	 * @return
 	 */
-	public PageResult findPage(TbTypeTemplate typeTemplate, int pageNum, int pageSize);
-
-
-
-
-	/**
-	 * 返回规格列表
-	 * @return
-	 */
+	public PageResult findPage(TbTypeTemplate typeTemplate, int pageNum,int pageSize);
+	
+	//根据模板ID查询规格列表
 	public List<Map> findSpecList(Long id);
-
 }

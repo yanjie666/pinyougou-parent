@@ -3,14 +3,14 @@
   <parent>
     <groupId>com.pinyougou</groupId>
     <artifactId>pinyougou-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
   </parent>
   <artifactId>pinyougou-solr-util</artifactId>
   <dependencies>
   	<dependency>
   		<groupId>com.pinyougou</groupId>
   		<artifactId>pinyougou-dao</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
+  		<version>0.0.3-SNAPSHOT</version>
   	</dependency>
   	
   	  		<!-- Spring -->
